@@ -46,7 +46,7 @@ model = pandas.read_csv('data.csv')
 from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
 model.fit(input_set, output_set)
-model.predict([[21, 1], [22, 0]])
+predictions = model.predict([[21, 1], [22, 0]])
 ```
 
 ### Tools
