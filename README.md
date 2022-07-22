@@ -55,5 +55,3 @@ predictions = model.predict([[21, 1], [22, 0]])
     - `$ jupyter notebook` > New > "Python 3" notebook
 - Sample data
     - kaggle.com
-- 
-
