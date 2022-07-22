@@ -47,6 +47,7 @@ from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
 model.fit(input_set, output_set)
 predictions = model.predict([[21, 1], [22, 0]])
+# predictions = array(['HipHop', 'Dance'])
 ```
 
 ### Tools
