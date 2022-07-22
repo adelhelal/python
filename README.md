@@ -45,7 +45,7 @@ model = pandas.read_csv('data.csv')
 ```python
 from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
-model.fit(inputSet, outputSet)
+model.fit(input_set, output_set)
 ```
 
 ### Tools
