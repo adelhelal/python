@@ -44,6 +44,9 @@ data = pandas.read_csv('data.csv')
 - Scikit-learn - decision trees / neural networks etc
 ```python
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+train_test_split(data['input_column'], data['output_column'], test_size=0.2)
+
 model = DecisionTreeClassifier()
 model.fit(data['input_column'], data['output_column'])
 predictions = model.predict([[21, 1], [22, 0]])
