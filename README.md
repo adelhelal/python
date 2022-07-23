@@ -43,15 +43,17 @@ data = pandas.read_csv('data.csv')
 - MatPlotLib - two-dimentional plotting library for graphs
 - Scikit-learn - decision trees / neural networks etc
 ```python
-# test and training data
+# train and test model
 from sklearn.model_selection import train_test_split
 input_train, input_test, output_train, output_test = train_test_split(data['input_column'], data['output_column'], test_size=0.2)
-# prediction
+# make prediction
 from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
 model.fit(input_train, output_train)
 predictions = model.predict(input_test)
-# predictions = array(['HipHop', 'Dance'])
+# evaluate
+from sklearn.metrics import accuracy_score
+accuracy_score(output_test, predictions) # asset expected vs actual
 ```
 
 ### Tools
