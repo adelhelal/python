@@ -53,7 +53,7 @@ model.fit(input_train, output_train)
 predictions = model.predict(input_test)
 # evaluate
 from sklearn.metrics import accuracy_score
-accuracy_score(output_test, predictions) # assert expected vs actual = score from 0-1
+score = accuracy_score(output_test, predictions) # assert expected vs actual = score from 0-1
 ```
 
 ### Tools
