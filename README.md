@@ -43,10 +43,11 @@ data = pandas.read_csv('data.csv')
 - MatPlotLib - two-dimentional plotting library for graphs
 - Scikit-learn - decision trees / neural networks etc
 ```python
-from sklearn.tree import DecisionTreeClassifier
+# test and training data
 from sklearn.model_selection import train_test_split
 input_train, input_test, output_train, output_test = train_test_split(data['input_column'], data['output_column'], test_size=0.2)
-
+# prediction
+from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
 model.fit(data['input_column'], data['output_column'])
 predictions = model.predict([[21, 1], [22, 0]])
