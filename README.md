@@ -49,7 +49,7 @@ input_train, input_test, output_train, output_test = train_test_split(data['inpu
 # prediction
 from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
-model.fit(data['input_column'], data['output_column'])
+model.fit(input_train, output_train)
 predictions = model.predict([[21, 1], [22, 0]])
 # predictions = array(['HipHop', 'Dance'])
 ```
