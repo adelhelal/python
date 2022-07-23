@@ -38,14 +38,14 @@ def hello():
 - Pandas - data analysis with data frames / two-dimentional data structures (roes and columns)
 ```python
 import pandas
-model = pandas.read_csv('data.csv')
+data = pandas.read_csv('data.csv')
 ```
 - MatPlotLib - two-dimentional plotting library for graphs
 - Scikit-learn - decision trees / neural networks etc
 ```python
 from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
-model.fit(input_set, output_set)
+model.fit(data['input_column'], data['output_column'])
 predictions = model.predict([[21, 1], [22, 0]])
 # predictions = array(['HipHop', 'Dance'])
 ```
