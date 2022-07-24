@@ -50,12 +50,14 @@ input_train, input_test, output_train, output_test = train_test_split(data['inpu
 from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
 model.fit(input_train, output_train)
-  # sklearn.externals.joblib.dump(model, 'persisted_model.joblib')
-  # model = sklearn.externals.joblib.load('persisted_model.joblib')
 predictions = model.predict(input_test)
 # evaluate
 from sklearn.metrics import accuracy_score
 score = accuracy_score(output_test, predictions) # assert expected vs actual = score from 0-1
+# persist model
+sklearn.externals.joblib.dump(model, 'persisted_model.joblib')
+model = sklearn.externals.joblib.load('persisted_model.joblib')
+predictions = model.predict(input_test)
 ```
 
 ### Tools
