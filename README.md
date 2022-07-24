@@ -65,3 +65,5 @@ predictions = model.predict(input_test)
     - `$ jupyter notebook` > New > "Python 3" notebook
 - Sample data
     - kaggle.com
+- Graphical visualisation
+    - VS Code Extension: Graphviz (dot)
