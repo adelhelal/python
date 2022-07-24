@@ -49,7 +49,7 @@ input_train, input_test, output_train, output_test = train_test_split(data['inpu
 # make prediction
 from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
-model.fit(input_train, output_train)
+model.fit(input_train, output_train) # train
 predictions = model.predict(input_test)
 # evaluate
 from sklearn.metrics import accuracy_score
