@@ -74,3 +74,4 @@ tree.export_graphviz(model, out_file='graph.dot', feature_names=['age', 'gender'
     - kaggle.com
 - Graphical visualisation
     - VS Code Extension: Graphviz (dot)
+- GuardDog - Open source project that helps identify malicious Python packages using Semgrep and package metadata analysis
