@@ -32,6 +32,13 @@ def hello():
    return 'Hello World'   
 ```
 
+### TLSv1.1
+
+- support for mysql drivers
+```python
+CFLAGS="-I$(brew --prefix openssl@1.1)/include" LDFLAGS="-L$(brew --prefix openssl@1.1)/lib" pyenv install 3.9.10
+```
+
 ## Machine Learning
 ### Libraries
 - Numpy - multidimentional array (python)
